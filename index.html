@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis tablas</title>
+
+<!-- Este es el titulo que va a tener el documento-->    
+
+<style>
+ 
+
+h1 {
+    text-align: center;
+}
+
+.M12 {
+    background-color: antiquewhite;
+}
+
+.M4 {
+    background-color: burlywood;
+}
+
+.M7 {
+    background-color: cadetblue;
+}
+
+.M11 {
+    background-color: firebrick;
+}
+
+.M8 {
+    background-color: greenyellow;
+}
+
+#tutoria {
+    background-color: hotpink;
+}
+
+#M6 {
+    background-color: indianred;
+}
+
+</style>
+
+</head>
+<body>
+<style>
+    table {
+        width: 100%;
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+    table {
+        width: 100%
+        
+    }
+<h1>Ivan Delgado Montalvo</h1>
+<h2>SMX2</h2>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Hora</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+    </thead>
+
+<!-- Esto es la cabecera de cada columna y cada fila donde definimos ademas que se escriba en negrita-->
+
+    <tbody>
+        <tr>
+            <td>15:00-15:55</td>
+            <td rowspan="2"; class="M4">M4 S.Op.Red</td>
+            <td rowspan="2"; class="M12">M12.2 Sintesi</td>
+            <td rowspan="2"></td>
+            <td rowspan="2"; class="M7">M7 Servicios</td>
+            <td rowspan="2"; class="M8">M8 Web</td>
+        </tr>
+
+<!-- Esto es la primera fila horaria que contiene la franja horaria de 15:00-15:55 con sus respectivas clases para aplicarles color-->
+
+        <tr>
+            <td>15:55-16:50</td>
+        </tr>
+
+<!-- Esta fila solamente contiene la hora ya que todas las asignaturas son de 2 horas y ya estan definidas anteriormente con rowspan=2-->
+
+        <tr>
+            <td>16:50-17:45</td>
+            <td rowspan="2"; class="M12">M12.1 Sintesi</td>
+            <td rowspan="2"; class="M4">M4 S.Op.Red</td>
+            <td class="M11">M11 Ingles</td>
+            <td class="M12">M12.1 Sintesi</td>
+            <td class="M11">M11 Ingles</td>
+        </tr>
+
+<!-- Esto es la primera fila horaria que contiene la franja horaria de 16:50-17:45 con sus respectivas clases para aplicarles color-->
+
+        <tr>
+            <td>17:45-18:40</td>
+            <td class="M8">M8 Web</td>
+            <td class="M11">M11 Ingles</td>
+            <td id="tutoria">Tutoria</td>
+        </tr>  
+
+<!-- Esto es la primera fila horaria que contiene la franja horaria de 17:45-18:40 con sus respectivas clases para aplicarles color-->
+
+        <tr>
+            <td>18:40-19:10</td>
+            <td colspan="5"; align="center">Patio</td>
+        </tr>  
+        
+<!-- Esta fila contiene la hora y la franja patio que esta definida para que ocupe las 5 columnas y este centrado-->        
+
+        <tr>
+            <td>19:10-20:05</td>
+            <td rowspan="2"; class="M7">M7 Servicios</td>
+            <td rowspan="2"; id="M6">M6 Seguridad</td>
+            <td rowspan="2"; class="M12">M12.2 Sintesi</td>
+            <td class="M7">M7 Servicios</td>
+            <td rowspan="2"></td>
+        </tr> 
+        
+<!-- Esto es la primera fila horaria que contiene la franja horaria de 19:10-20:05 con sus respectivas clases para aplicarles color-->        
+
+        <tr>
+            <td>20:05-21:00</td>
+            <td></td>
+        </tr>   
+
+<!-- Esta fila contiene solo la franja horaria y el espacio hueco del jueves debido a que el espacio hueco del viernes ya esta definido anteriormente con rowspan=2-->
+
+    </tbody>
+    <tfoot>
+    </tfoot>
+</table>
+
+</body>
+</html> 
+
